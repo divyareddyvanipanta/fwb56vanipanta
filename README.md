@@ -4,7 +4,7 @@ Created git repo
 
 https://fwb56vanipanta.herokuapp.com/
 
-class bag
+class handbag
 
 bag_name string
 
