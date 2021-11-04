@@ -14,9 +14,13 @@ block content
     p Number of columns should be less than 6
   else
     table(id="outer" class="table table-striped")
-      - for(let i=0; i<query.rows; i++){
-          tr#middle
-            - for(let j=0; j<query.cols; j++) {
-                td= i+j
-            -}
-      -}
+        - 
+        - for(let i=0; i<query.rows; i++) {
+            tr
+                - for(let j=i; j<query.cols-1; j++) {
+                    td=j
+                -}        
+                - for(let k=0; k<=i; k++){
+                    td=k
+                -}      
+        - } 
